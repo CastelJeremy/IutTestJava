@@ -13,6 +13,9 @@ public class ClassePrincipale {
      * Displays "Ceci est la classe principale" when called.
      */
     public void afficherTexte() {
+        SingleClass instance = SingleClass.getInstance();
+        
         System.out.println("Ceci est la classe principale");
+        System.out.println(instance.getUuid());
     }
 }
