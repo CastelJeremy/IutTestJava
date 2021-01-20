@@ -1,10 +1,14 @@
 package net.jeremycastel.testjava;
 
+import java.util.logging.Logger;
+
 /**
  * Parent class of ClasseFille. Displays a string when the afficherTexte method
  * is called.
  */
 public class ClassePrincipale {
+    private static final Logger LOGGER = Logger.getLogger(ClassePrincipale.class.getName());
+
     public ClassePrincipale() {
         super();
     }
@@ -14,8 +18,8 @@ public class ClassePrincipale {
      */
     public void afficherTexte() {
         SingleClass instance = SingleClass.getInstance();
-        
-        System.out.println("Ceci est la classe principale");
-        System.out.println(instance.getUuid());
+
+        LOGGER.info("Ceci est la classe principale");
+        LOGGER.info(instance.getUuid());
     }
 }
