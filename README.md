@@ -1,2 +1,3 @@
 # IutTestJava
-Test for java project for ECUE6501 module
+Test for java project for ECUE6501 module.
+Forked.
